@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Philipp Merz</title>
+  <meta name="description" content="Philipp Merz, a coder from Germany living in the Netherlands, interested in high-agency tech, applied philosophy and martial arts (mostly kickboxing).">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f8f7f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1c1d1b" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Philipp Merz">
+  <meta property="og:description" content="Philipp Merz, a coder from Germany living in the Netherlands, interested in high-agency tech, applied philosophy and martial arts (mostly kickboxing).">
+  <meta property="og:url" content="https://merz.page/">
+  <link rel="canonical" href="https://merz.page/">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231c1d1b'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Georgia,serif' font-size='27' fill='%23f8f7f4'%3EPM%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <h1>Philipp Merz</h1>
+    <p>I'm Philipp, a <span id="age">24</span>-year-old coder from Germany, currently living in the Netherlands. I'm interested in high-agency tech, applied philosophy and martial arts (mostly kickboxing).</p>
+    <ul>
+      <li><a href="https://github.com/philippmerz/rl-thesis/blob/main/latex/thesis.pdf" target="_blank" rel="noopener"><strong>Bachelor in Data Science, TU Eindhoven</strong></a>: thesis on training a DQN agent to maximise survival on a 2D grid (graded 8.5/10).</li>
+      <li><a href="https://schoolyear.nl" target="_blank" rel="noopener"><strong>Schoolyear</strong></a>: first full-time employee. Over three years as frontend engineer and project manager, I helped scale it from zero to 3M+ revenue.</li>
+      <li><strong>High-agency tech:</strong> <a href="https://philippmerz.github.io/polyclaude/" target="_blank" rel="noopener">polyclaude</a>, an experimental, LLM-based DeFi trader.</li>
+    </ul>
+    <footer><a href="mailto:philipp@merz.page">philipp@merz.page</a></footer>
+  </main>
+  <script>
+    const today = new Date();
+    const beforeBirthday = today.getMonth() < 9 || (today.getMonth() === 9 && today.getDate() < 23);
+    document.getElementById('age').textContent = today.getFullYear() - 2001 - (beforeBirthday ? 1 : 0);
+  </script>
+</body>
+</html>
