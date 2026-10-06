@@ -63,3 +63,7 @@ footer { margin-top: 2.75rem; font-size: 0.9375rem; }
 .projects ul { list-style: none; padding: 0; font-size: 0.9375rem; }
 .projects li { padding: 0; }
 .projects li + li { margin-top: 0.4rem; }
+
+footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+footer .gh { display: inline-flex; color: var(--marker); transition: color .2s; }
+footer .gh:hover { color: var(--accent); }
